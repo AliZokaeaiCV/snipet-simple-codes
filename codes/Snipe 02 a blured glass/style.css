@@ -1,0 +1,99 @@
+html{
+    height: 100vh;
+}
+
+body{
+    background: black;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    display: block;
+    text-decoration: none;
+    background: rgba(231, 131, 15, 0.9);
+    clear: both;
+    padding: 20px;
+    color:wheat;
+    text-align: center;
+    font-family:sans-serif;
+
+}
+a:hover{
+    background:yellow;
+    padding:22px;
+    color: black;
+    opacity: 0.7;
+
+}
+.ball{
+    border-radius: 50%;
+    position: absolute;
+    z-index: -5;
+}
+.ball1{
+    transform: translate(200px, - 50px);
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(900deg, #0084ff, #0ff);
+}
+
+.ball2{
+    transform:  translate(-160px, 100px);
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(90deg, #a200ff, #000dff);
+}
+
+.ball3{
+    transform: translate(-200px, -140px);
+    height: 240px;
+    width: 240px;
+    background: linear-gradient(90deg, #00ffd9, #00ff84);
+}
+
+#cardwrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+    clear: both;
+}
+
+.cardContent{
+    position:absolute;
+    height: 250px;
+    width: 400px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 100px 0 30px 50px;
+}
+
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card{
+    height: 250px;
+    width: 400px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border:2px outest rgba(255, 255, 255, 0.3);
+    box-shadow: 0px, 1px 24px -1px rgba(0, 0, 0, 0.2);
+}
+
+.card::after{
+    content:"";
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+
